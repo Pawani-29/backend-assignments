@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="page-header">
+            <h1>Student Management System</h1>
+            <p>JavaScript Array and Iteration Methods — College Assignment</p>
+        </header>
+
+        <section class="card">
+            <div class="section-header">
+                <h2>Student Data Table</h2>
+                <button id="reset-btn" class="btn btn-outline" onclick="resetData()">Reset Data</button>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Marks</th>
+                            <th>Course</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-table-body">
+                        <!-- Table content populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Array Operations Section -->
+        <section class="card">
+            <h2>Array Operations</h2>
+            <p class="instruction">Click any button below to perform an array method operation:</p>
+            
+            <div class="buttons-grid">
+                <button class="btn" onclick="addStudent()">1. Add Student (push)</button>
+                <button class="btn" onclick="removeLastStudent()">2. Remove Last Student (pop)</button>
+                <button class="btn" onclick="addStudentBeginning()">3. Add Student at Beginning (unshift)</button>
+                <button class="btn" onclick="removeFirstStudent()">4. Remove First Student (shift)</button>
+                <button class="btn" onclick="updateStudent()">5. Update Student (splice)</button>
+                <button class="btn" onclick="showFirstThree()">6. First Three Students (slice)</button>
+                <button class="btn" onclick="displayStudents()">7. Display Students (for...of)</button>
+                <button class="btn" onclick="showNames()">8. Show Names (forEach)</button>
+                <button class="btn" onclick="getStudentNames()">9. Student Names Array (map)</button>
+                <button class="btn" onclick="filterHighScorers()">10. Students with Marks &gt;=80 (filter)</button>
+                <button class="btn" onclick="calculateTotalAverage()">11. Total &amp; Average Marks (reduce)</button>
+                <button class="btn" onclick="sortAscending()">12. Sort Ascending</button>
+                <button class="btn" onclick="sortDescending()">13. Sort Descending</button>
+            </div>
+        </section>
+
+        <!-- Output Section -->
+        <section class="card output-section">
+            <h2>Output</h2>
+            <div id="output-box" class="output-content">
+                <p class="empty-msg">Select an operation above to view the execution result here.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
